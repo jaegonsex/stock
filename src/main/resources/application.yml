@@ -1,10 +1,14 @@
 spring:
   jpa:
     hibernate:
-      ddl-auto: create-drop
-    show-sql: true
+      ddl-auto: create
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306
+    url: jdbc:mysql://localhost:3306/stock
     username: root
     password: 1234
+  data:
+    redis:
+      host: 127.0.0.1
+
+
